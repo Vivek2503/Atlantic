@@ -1,6 +1,7 @@
 package com.example.zub.fuckgod;
 
 
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -17,6 +18,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.util.DisplayMetrics;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -52,16 +54,6 @@ public class AddFragment extends Fragment {
     public ProgressBar progressBar;
 
 
-
-
-
-
-
-
-
-
-
-
     public AddFragment() {
         // Required empty public constructor
     }
@@ -76,8 +68,6 @@ public class AddFragment extends Fragment {
     }
 
 
-
-
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
 
@@ -85,15 +75,10 @@ public class AddFragment extends Fragment {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String userId = user.getUid();
 
-
-
-
-
-
         title = (EditText) getView().findViewById(R.id.title);
 
         context = (EditText) getView().findViewById(R.id.context);
-       // context.setMovementMethod(new ScrollingMovementMethod());
+        // context.setMovementMethod(new ScrollingMovementMethod());
 
         post = (Button) getView().findViewById(R.id.post);
 
@@ -109,18 +94,12 @@ public class AddFragment extends Fragment {
                 post.setTextColor(Color.parseColor("#ffffff"));
 
 
-
-                if(titletext.isEmpty())
-                {
+                if (titletext.isEmpty()) {
                     title.setError("Title is missing");
 
-                }
-
-                else if(contextText.isEmpty())
-                {
+                } else if (contextText.isEmpty()) {
                     context.setError("Your content is missing");
-                }
-                else {
+                } else {
                     progressBar.setVisibility(View.VISIBLE);
 
 
@@ -131,33 +110,13 @@ public class AddFragment extends Fragment {
                     args.putString("extra2", contextText);
                     pfrag.setArguments(args);
 
-
-                    android.support.v4.app.FragmentTransaction fragmentTransaction =getFragmentManager().beginTransaction();
+                    android.support.v4.app.FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
 
                     fragmentTransaction.replace(R.id.fragment_container, pfrag).commit();
 
-
-
-
-
                     // newPost.child("image").setValue(downloadURL.tostring());
-
-
-
-
                 }
-
-
-
-
-
             }
         });
-
-
-
     }
-
-
-
 }
