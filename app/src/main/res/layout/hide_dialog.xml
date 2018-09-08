@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp" android:layout_height="170dp"
+    android:id="@+id/postcard"
+    android:background="@drawable/cardview_corner"
+    >
+
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:text="The hidden post will not appear in the Home page. However, you can see them in your profile"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:id="@+id/dialogtext"
+        android:textColor="#315184"
+        android:textSize="18sp"
+        />
+
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="Hide Post"
+        android:textColor="#c61b15"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="85dp"
+        android:id="@+id/HideText"
+
+        />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Cancel"
+        android:id="@+id/cancelText"
+        android:textColor="#626660"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="125dp"
+
+        />
+
+
+
+
+</RelativeLayout>

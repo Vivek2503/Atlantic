@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:background="@drawable/new_login_gradients"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    >
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+
+
+            <ImageView
+                android:layout_width="240dp"
+                android:layout_height="130dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="31dp"
+                android:padding="12dp"
+                android:src="@drawable/aq" />
+
+
+            <EditText
+                android:id="@+id/edittextUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+
+                android:layout_marginTop="195dp"
+
+
+                android:backgroundTint="@color/common_google_signin_btn_text_dark_pressed"
+
+                android:drawableLeft="@drawable/ic_person_white_24dp"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Username"
+
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                tools:backgroundTint="@color/common_google_signin_btn_text_dark_default" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#f9d7db" />
+
+
+
+
+            <EditText
+                android:id="@+id/edittextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="255dp"
+
+
+                android:backgroundTint="@color/common_google_signin_btn_text_dark_pressed"
+                android:drawableLeft="@drawable/ic_lock_white_24dp"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColor="#fff"
+                android:textColorHint="#fff" />
+
+
+            <ImageView
+                android:id="@+id/eye_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="265dp"
+                android:src="@drawable/eye_open"
+                android:layout_marginStart="290dp"
+
+                />
+            <ImageView
+                android:id="@+id/eye_closed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="265dp"
+                android:src="@drawable/eye_hidden"
+                android:layout_marginStart="290dp"
+
+                android:visibility="invisible"
+                android:clickable="false"
+                />
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="300dp"
+                android:id="@+id/remMe"
+
+                android:layout_alignParentEnd="true"
+                android:padding="8dp"
+                android:text="Remember Me "
+                android:textColor="#fff" />
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="240dp"
+                android:layout_marginRight="1dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                app:cardElevation="8dp"
+                android:id="@+id/card"
+                android:visibility="invisible"
+                >
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/av_loader"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingRight="80dp"
+                    android:paddingLeft="80dp"
+
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="loading.json"
+                    app:lottie_loop="true" />
+
+                <TextView
+                    android:id="@+id/textviewlogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:text="Loading. Please wait..."
+
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="90dp"
+                    android:textSize="22sp"
+                    />
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <Button
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="370dp"
+                android:background="@drawable/background_login"
+                android:clickable="true"
+                android:onClick="to_home_btn"
+                android:padding="12dp"
+                android:text="Log In"
+                android:textAllCaps="false"
+                android:textColor="#f16f7d"
+                android:textSize="18sp" />
+
+
+            <Button
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="430dp"
+                android:background="@drawable/background_signup"
+                android:clickable="true"
+
+                android:onClick="to_registration_btn"
+                android:padding="12dp"
+                android:text=" Sign Up"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="495dp"
+                android:clickable="true"
+                android:onClick="to_forgot_password_btn"
+
+                android:padding="14dp"
+                android:text="Forgot Password? Click here.."
+
+                android:textColor="#fff" />
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+</ScrollView>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+
+    >
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav-home"
+            android:icon="@drawable/home"
+            android:title="Home"
+
+            ></item>
+
+        <item
+            android:id="@+id/nav-profile"
+            android:icon="@drawable/ic_profile"
+
+            android:title="Profile"></item>
+
+        <item
+            android:id="@+id/nav-about"
+            android:icon="@drawable/ic_about"
+            android:title="About"></item>
+
+
+        <item
+            android:id="@+id/nav-settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings"
+            ></item>
+
+    </group>
+
+
+    <group android:checkableBehavior="single">
+
+
+        <item android:title="">
+
+            <menu>
+
+                <item
+                    android:id="@+id/close_door"
+                    android:icon="@drawable/ic_closed_filled_rectangular_door"
+                    android:title="Close Door"
+
+
+                    ></item>
+
+                <item
+                    android:id="@+id/anonymous"
+                    android:icon="@drawable/ic_unknown_user_symbol"
+
+                    android:title="AnonyMe"></item>
+
+            </menu>
+
+
+
+        </item>
+
+
+
+
+
+
+
+    </group>
+
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+
+                android:title="Log Out"
+
+                >
+
+            </item>
+        </menu>
+
+    </item>
+</menu>

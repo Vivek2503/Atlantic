@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/registration_image"
+    tools:context=".Registration"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/edittext_background"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:textColor="#fff"
+            android:textColorHint="#6c6d70"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/editText9"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginStart="36dp"
+            android:background="@drawable/edittext_background"
+            android:maxLines="1"
+            android:ems="10"
+            android:padding="8dp"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:textColor="#fff"
+            android:textColorHint="#6c6d70"
+            app:layout_constraintStart_toStartOf="@+id/editText7"
+            app:layout_constraintTop_toBottomOf="@+id/editText7" />
+
+
+
+        <EditText
+            android:id="@+id/editText10"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginStart="36dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:padding="8dp"
+            android:hint="Email Id"
+            android:inputType="textEmailAddress"
+            android:textColor="#fff"
+            android:maxLines="1"
+            android:textColorHint="#6c6d70"
+            app:layout_constraintStart_toStartOf="@+id/editText9"
+            app:layout_constraintTop_toBottomOf="@+id/editText9" />
+
+
+
+        <EditText
+            android:id="@+id/editText11"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:maxLines="1"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="330dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Password"
+            android:padding="8dp"
+            android:inputType="textPassword"
+            android:textColor="#fff"
+            android:textColorHint="#6c6d70"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <EditText
+            android:id="@+id/editText12"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="420dp"
+            android:layout_marginStart="36dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+
+            android:padding="8dp"
+            android:textColor="#fff"
+            android:textColorHint="#6c6d70"
+            app:layout_constraintStart_toStartOf="@+id/editText11"
+            app:layout_constraintTop_toBottomOf="@+id/editText11" />
+
+
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="240dp"
+
+            android:padding="4dp"
+            app:cardElevation="8dp"
+            android:id="@+id/card"
+            android:visibility="invisible"
+            >
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/av_loader"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+
+
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText11"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="progress_bar.json"
+                app:lottie_loop="true" />
+
+            <TextView
+                android:id="@+id/textviewReg"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Loading. Please wait..."
+                android:paddingLeft="55dp"
+
+                android:layout_marginTop="90dp"
+                android:textSize="22sp"
+                />
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="500dp"
+
+            android:layout_marginStart="60dp"
+            android:background="@drawable/background_signup"
+
+            android:onClick="action_btn"
+            android:text="Sign Up"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:src="@drawable/new_logo"
+            android:visibility="invisible"
+            android:layout_marginStart="115dp"
+            />
+
+
+
+
+        <ImageView
+            android:id="@+id/eye_open1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="339dp"
+            android:src="@drawable/eye_open"
+            android:layout_marginStart="290dp"
+
+            />
+        <ImageView
+            android:id="@+id/eye_closed1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="339dp"
+            android:src="@drawable/eye_hidden"
+            android:layout_marginStart="290dp"
+
+            android:visibility="invisible"
+            android:clickable="false"
+            />
+
+
+        <ImageView
+            android:id="@+id/eye_open2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="428dp"
+            android:src="@drawable/eye_open"
+            android:layout_marginStart="290dp"
+
+            />
+        <ImageView
+            android:id="@+id/eye_closed2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="428dp"
+            android:src="@drawable/eye_hidden"
+            android:layout_marginStart="290dp"
+
+            android:visibility="invisible"
+            android:clickable="false"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</ScrollView>

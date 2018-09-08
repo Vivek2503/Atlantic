@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+
+
+    android:layout_marginTop="4dp"
+    android:background="@drawable/rounded"
+
+    >
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/rounded"
+
+        android:orientation="vertical"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded"
+            android:backgroundTint="#fff"
+            >
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilepicBlog"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:padding="6dp"
+                android:src="@drawable/defimg"
+                app:civ_border_color="#2a30a3"
+                app:civ_border_width="1dp"
+                />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/cover"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="7dp"
+                />
+
+            <TextView
+                android:id="@+id/post_username"
+                android:layout_width="193dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="74dp"
+                android:padding="14dp"
+                android:text="UserNameg"
+                android:textSize="16sp"
+                android:textStyle="bold|italic"
+                android:textColor="#4d5459"/>
+
+            <ImageButton
+                android:id="@+id/tools"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="37dp"
+                android:layout_height="34dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="23dp"
+                android:rotation="90"
+                android:src="@drawable/icon_image" />
+
+
+            <TextView
+                android:id="@+id/usertime"
+                android:layout_width="193dp"
+                android:layout_height="20dp"
+                android:layout_alignStart="@+id/post_username"
+                android:layout_below="@+id/post_username"
+                android:paddingLeft="14dp"
+                android:text="TextView"
+                android:textStyle="bold"
+                android:textColor="#737377"
+                />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/post_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="title goes here.."
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="#fff"
+
+            />
+
+        <TextView
+            android:id="@+id/post_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="description goes here..."
+            android:textSize="16sp"
+            android:background="#fff"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded"
+            android:backgroundTint="#fff"
+            android:id="@+id/ImageButtonView"
+            >
+
+            <ImageButton
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:id="@+id/Rate"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/icons8_star" />
+
+
+            <ImageButton
+                android:id="@+id/comment"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="78dp"
+                android:src="@drawable/comment" />
+
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_marginStart="135dp"
+                android:src="@drawable/icons8_share"
+                />
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="#fff"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:id="@+id/rateDetails"
+                android:text="0 Likes"
+                android:paddingLeft="30dp"
+                android:textSize="18sp"
+                android:textColor="#4d5459"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#ffffff"
+            >
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userDp"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/defimg"
+                app:civ_border_color="#2a30a3"
+                app:civ_border_width="1dp"
+                />
+
+
+            <EditText
+                android:id="@+id/commentText"
+                android:layout_width="240dp"
+                android:layout_height="52dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="35dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="#e8eaed"
+                android:hint="     Comment here..."
+
+                android:maxLines="1"
+                android:paddingLeft="16dp"
+                android:drawablePadding="14dp"
+                android:ems="10"
+
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+

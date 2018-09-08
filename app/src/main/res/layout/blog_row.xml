@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    app:cardElevation="0dp"
+
+    android:id="@+id/home_cardView"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:background="@drawable/home_rounded"
+
+        >
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/rl"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:background="@android:color/transparent"
+                >
+
+
+
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/profile_round"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="7dp"
+                    android:padding="0dp"
+
+                    android:visibility="visible"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="profile_round.json"
+                    app:lottie_loop="true" />
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profilepicBlog"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="9dp"
+                    android:padding="6dp"
+                    android:src="@drawable/defimg"
+                    app:civ_border_color="#2a30a3"
+                    app:civ_border_width="1dp"
+
+                    />
+
+                <ImageView
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/cover"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/post_username"
+                    android:layout_width="193dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="74dp"
+                    android:paddingLeft="14dp"
+                    android:text="UserName"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#f7f8f9"
+                    android:layout_marginTop="16dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/tools"
+                    android:layout_width="37dp"
+                    android:layout_height="34dp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="14dp"
+                    android:rotation="90"
+                    android:src="@drawable/icons_menu"
+
+                    />
+
+                <TextView
+                    android:id="@+id/usertime"
+                    android:layout_width="193dp"
+                    android:layout_height="20dp"
+                    android:layout_alignStart="@+id/post_username"
+                    android:layout_below="@+id/post_username"
+                    android:paddingLeft="14dp"
+                    android:text="TextView"
+                    android:textStyle="bold"
+                    android:textColor="#edeeef"
+                    />
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/toclick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/post_image"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_alignBottom="@id/post_desc"
+                android:layout_alignLeft="@id/post_desc"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@id/post_desc"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/post_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="24dp"
+                android:gravity="right"
+                android:padding="15dp"
+                android:text="title goes here.."
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/post_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="101dp"
+                android:padding="15dp"
+                android:text="descriptions goes here..."
+
+                android:textSize="19dp" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            >
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/starlottie"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/Rate"
+                android:layout_marginTop="7dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="star.json"
+                app:lottie_loop="true" />
+
+
+            <ImageButton
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:id="@+id/Rate"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/icons8_star" />
+
+
+            <ImageButton
+                android:id="@+id/comment"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="78dp"
+                android:src="@drawable/comment" />
+
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_marginStart="135dp"
+                android:src="@drawable/icons8_share"
+                />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="20dp"
+            android:id="@+id/rateDetails"
+            android:text="0 Likes"
+            android:paddingLeft="30dp"
+            android:textSize="16sp"
+            android:textColor="#ef2d1f"
+
+            />
+        
+        
+
+
+    </LinearLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

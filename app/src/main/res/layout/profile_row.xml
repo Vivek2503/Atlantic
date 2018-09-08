@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+
+    android:background="@drawable/rounded"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardElevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profile_rounded">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilepicBlog"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="26dp"
+            android:padding="4dp"
+            android:src="@drawable/defimg" />
+
+
+        <TextView
+            android:id="@+id/post_title"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="122dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="title is here.."
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/posttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="247dp"
+            android:layout_marginTop="9dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="post time..."
+            android:textSize="12sp"
+            android:textColor="#737477"
+            />
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/post_hidden"
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/post_hidden"
+            android:visibility="invisible"
+            android:clickable="false"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/post_desc"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="122dp"
+            android:layout_marginTop="30dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="content..."
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

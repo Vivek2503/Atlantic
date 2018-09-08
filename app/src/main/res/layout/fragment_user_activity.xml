@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pic"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="14dp"
+            android:padding="10dp"
+            android:src="@drawable/defimg"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+
+
+            android:textSize="20dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/User_blog_list"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_marginTop="132dp" />
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
